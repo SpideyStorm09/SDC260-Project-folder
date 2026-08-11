@@ -1,0 +1,28 @@
+/*
+    Author:
+    Date:
+    Purpose:
+*/
+
+/* Structural Properties */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.collection-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    display: inline-block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    display: block;
+}
