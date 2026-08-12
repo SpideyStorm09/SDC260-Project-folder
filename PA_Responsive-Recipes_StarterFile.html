@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Author: Alexander Smith 
+        Date: 08/11/2026
+        Purpose: adding content and mobile responsiveness to a fantasy potion recipe web page. 
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potion Recipe Book</title>
+</head>
+
+<link rel="stylesheet" href="PA_Responsive-Recipes_StarterFile.css">
+
+<body>
+    <header>
+        <h1>Potion Recipe Book</h1>
+        <p>A collection of magical brews and their ingredients</p>
+    </header>
+    
+    <main>
+        <section class="potion-container" aria-label="Potion recipes">
+    
+            <!-- 
+                POTION CARD:
+                - Each <article> represents ONE potion
+                - You may DUPLICATE this entire article then UPDATE the contents to add more potions
+                - Keep structure consistent for all potions
+            -->
+            <article class="potion">
+                <header>
+                    <!-- POTION NAME -->
+                    <h2>Healing Potion</h2>
+                </header>
+    
+                <!-- POTION DESCRIPTION -->
+                <p>Restores a moderate amount of health.</p>
+    
+                <!-- INGREDIENT TABLE -->
+                <section>
+                    <h3>Ingredients</h3>
+                    <table>
+                        <caption>Healing Potion Ingredients</caption>
+                        
+                        <thead>
+                            <tr>
+                                <th scope="col">Ingredient</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td>Red Herb</td>
+                                <td>2 dried specimens</td>
+                            </tr>
+                            <tr>
+                                <td>Crystal Water</td>
+                                <td>1 vial</td>
+                            </tr>
+                            <tr>
+                                <td>Glow Mushroom</td>
+                                <td>3 caps without stems</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+    
+            <!-- POTION CARD -->
+            <article class="potion">
+    
+                <header>
+                    <h2>Invisibility Potion</h2>
+                </header>
+    
+                <p>Grants temporary invisibility.</p>
+    
+                <section>
+                    <h3>Ingredients</h3>
+    
+                    <table>
+                        <caption>Invisibility Potion Ingredients</caption>
+    
+                        <thead>
+                            <tr>
+                                <th scope="col">Ingredient</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td>Ghost Leaf</td>
+                                <td>4 leaves</td>
+                            </tr>
+                            <tr>
+                                <td>Shadow Essence</td>
+                                <td>2 drops</td>
+                            </tr>
+                            <tr>
+                                <td>Nightshade</td>
+                                <td>1 plant with roots</td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </section>
+            </article>
+            
+        </section>
+
+         <article class="potion">
+                <header>
+                    <!-- POTION NAME -->
+                    <h2>Pikachu's Spark Tonic</h2>
+                </header>
+    
+                <!-- POTION DESCRIPTION -->
+                <p>Restores stamina and grants a brief surge of electrical agility.</p>
+    
+                <!-- INGREDIENT TABLE -->
+                <section>
+                    <h3>Ingredients</h3>
+                    <table>
+                        <caption>Pikachu's Spark Tonic Ingredients</caption>
+                        
+                        <thead>
+                            <tr>
+                                <th scope="col">Ingredient</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td>Thunder Shard</td>
+                                <td>1 Crackling Fragment</td>
+                            </tr>
+                            <tr>
+                                <td>Yellow Berry Mash</td>
+                                <td>2 Spoonfuls</td>
+                            </tr>
+                            <tr>
+                                <td>Static Dust</td>
+                                <td>A light Pinch</td>
+                            </tr>
+                            <tr>
+                                <td>Charged Dew</td>
+                                <td>1 vial</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+
+              <article class="potion">
+                <header>
+                    <!-- POTION NAME -->
+                    <h2>Charizard's Ember Brew</h2>
+                </header>
+    
+                <!-- POTION DESCRIPTION -->
+                <p>Boost attack power and warms the body with fierce draconic energy.</p>
+    
+                <!-- INGREDIENT TABLE -->
+                <section>
+                    <h3>Ingredients</h3>
+                    <table>
+                        <caption>Charizard's Ember Brew Ingredients</caption>
+                        
+                        <thead>
+                            <tr>
+                                <th scope="col">Ingredient</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td>Flame Scale</td>
+                                <td>1 flake</td>
+                            </tr>
+                            <tr>
+                                <td>Charcoal Powder</td>
+                                <td>3 Scoops</td>
+                            </tr>
+                            <tr>
+                                <td>Spicy Pepper root</td>
+                                <td>1 chopped root</td>
+                            </tr>
+                            <tr>
+                                <td>Lava Drop</td>
+                                <td>2 Molten beads</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+
+              <article class="potion">
+                <header>
+                    <!-- POTION NAME -->
+                    <h2>Bulbasaur's Verdant Elixir</h2>
+                </header>
+    
+                <!-- POTION DESCRIPTION -->
+                <p>Gradually restores health and enhances natural regeneration.</p>
+    
+                <!-- INGREDIENT TABLE -->
+                <section>
+                    <h3>Ingredients</h3>
+                    <table>
+                        <caption>Bulbasaur's Verdant Elixir Ingredients</caption>
+                        
+                        <thead>
+                            <tr>
+                                <th scope="col">Ingredient</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <td>Leaf Essence</td>
+                                <td>2 pressed leaves</td>
+                            </tr>
+                            <tr>
+                                <td>Dewdrop Nectar</td>
+                                <td>1 vial</td>
+                            </tr>
+                            <tr>
+                                <td>Vine Sap</td>
+                                <td>3 drops</td>
+                            </tr>
+                            <tr>
+                                <td>Meadow Spores</td>
+                                <td>a Small Sprinkle</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+    </main>
+    
+    <footer>
+        <p>Responsive Recipes Vol. 2026
+        <p>Potion Archivist: alesmi3791</p>
+    </footer>
+
+</body>
+</html>
