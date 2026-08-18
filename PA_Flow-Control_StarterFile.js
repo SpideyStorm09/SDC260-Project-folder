@@ -27,7 +27,7 @@ let trailIndex = 0;
 while (trailIndex < trails.length) {
     trailContainer.innerHTML += `
         <article class="card">
-            <h3>${trails[trailIndex].trails}</h3>
+            <h3>${trails[trailIndex].name}</h3>
             <p>Difficulty: ${trails[trailIndex].difficulty}</p>
             <p>Average Time: ${trails[trailIndex].time}</p>
         </article>
