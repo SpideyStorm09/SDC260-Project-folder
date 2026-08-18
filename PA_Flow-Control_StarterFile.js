@@ -42,9 +42,8 @@ while (trailIndex < trails.length) {
    TODO: FORM LOGIC
 ========================================= */
 document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault();
-});
-
+    event.preventDefault(); // stop page reload
+    
 const pets = document.querySelector("input[name='Pets']:checked").value;
  const experience = document.querySelector("#experience").value;
 
