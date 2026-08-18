@@ -25,7 +25,7 @@ const trails = [
 let trailIndex = 0;
 
 while (trailIndex < trails.length) {
-    trailsContainer.innerHTML += `
+    trailContainer.innerHTML += `
         <article class="card">
             <h3>${trails[trailIndex].trails}</h3>
             <p>Difficulty: ${trails[trailIndex].difficulty}</p>
