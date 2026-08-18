@@ -73,3 +73,6 @@ results.innerHTML = `
         <h3>${recommendation}</h3>
     </article>
 `;
+
+const pets = urlParams.get("Pets");        // "yes" or "no"
+const experience = urlParams.get("experience"); // "low", "medium", "high"
