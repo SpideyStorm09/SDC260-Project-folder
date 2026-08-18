@@ -41,6 +41,9 @@ while (trailIndex < trails.length) {
 /* =========================================
    TODO: FORM LOGIC
 ========================================= */
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+});
 
 const pets = urlParams.get("Pets");        // "Yes" or "No"
 const experience = urlParams.get("experience"); // "low", "medium", "high"
@@ -72,7 +75,7 @@ else {
     recommendation = "River Walk";
 }
 
-results.innerHTML = `
+result.innerHTML = `
     <article class="card">
         <h3>${recommendation}</h3>
     </article>
