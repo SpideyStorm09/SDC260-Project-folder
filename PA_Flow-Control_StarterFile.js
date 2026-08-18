@@ -7,6 +7,8 @@
 /* =========================================
    GREENWAY PARK TRAIL DATA
 ========================================= */
+const trailContainer = document.getElementById("trailContainer");
+const result = document.getElementById("result");
 
 const trails = [
     { name: "River Walk", difficulty: "low", time: 20 },
@@ -43,7 +45,7 @@ while (trailIndex < trails.length) {
 ========================================= */
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault(); // stop page reload
-    
+
 const pets = document.querySelector("input[name='Pets']:checked").value;
  const experience = document.querySelector("#experience").value;
 
@@ -79,3 +81,4 @@ result.innerHTML = `
         <h3>${recommendation}</h3>
     </article>
 `;
+});
