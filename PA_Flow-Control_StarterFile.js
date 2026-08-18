@@ -45,8 +45,8 @@ document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
 });
 
-const pets = urlParams.get("Pets");        // "Yes" or "No"
-const experience = urlParams.get("experience"); // "low", "medium", "high"
+const pets = document.querySelector("input[name='Pets']:checked").value;
+ const experience = document.querySelector("#experience").value;
 
 let recommendation = "";
 
