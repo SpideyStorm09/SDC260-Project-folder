@@ -41,3 +41,35 @@ while (trailIndex < trails.length) {
 /* =========================================
    TODO: FORM LOGIC
 ========================================= */
+let recommendation = "";
+
+if (pets === "yes" && experience === "low") {
+    // Pets AND Low Experience
+    recommendation = "River Walk";
+}
+else if (pets === "yes" && (experience === "medium" || experience === "high")) {
+    // Pets AND Medium or High Experience
+    recommendation = "Forest Loop";
+}
+else if (pets === "no" && experience === "low") {
+    // No Pets AND Low Experience
+    recommendation = "Lake Side Path";
+}
+else if (pets === "no" && experience === "medium") {
+    // No Pets AND Medium Experience
+    recommendation = "Forest Loop";
+}
+else if (pets === "no" && experience === "high") {
+    // No Pets AND High Experience
+    recommendation = "Rock Ridge Trail";
+}
+else {
+    // Default recommendation
+    recommendation = "River Walk";
+}
+
+results.innerHTML = `
+    <article class="card">
+        <h3>${recommendation}</h3>
+    </article>
+`;
