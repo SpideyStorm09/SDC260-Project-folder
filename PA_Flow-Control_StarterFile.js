@@ -74,5 +74,5 @@ results.innerHTML = `
     </article>
 `;
 
-const pets = urlParams.get("Pets");        // "yes" or "no"
+const pets = urlParams.get("Pets");        // "Yes" or "No"
 const experience = urlParams.get("experience"); // "low", "medium", "high"
