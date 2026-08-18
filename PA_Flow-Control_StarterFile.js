@@ -41,6 +41,10 @@ while (trailIndex < trails.length) {
 /* =========================================
    TODO: FORM LOGIC
 ========================================= */
+
+const pets = urlParams.get("Pets");        // "Yes" or "No"
+const experience = urlParams.get("experience"); // "low", "medium", "high"
+
 let recommendation = "";
 
 if (pets === "yes" && experience === "low") {
@@ -73,6 +77,3 @@ results.innerHTML = `
         <h3>${recommendation}</h3>
     </article>
 `;
-
-const pets = urlParams.get("Pets");        // "Yes" or "No"
-const experience = urlParams.get("experience"); // "low", "medium", "high"
